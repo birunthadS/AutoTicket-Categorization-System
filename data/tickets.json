@@ -1,0 +1,172 @@
+[
+    {
+        "ticket_id": "105",
+        "subject": "Forgot password",
+        "description": "Unable to login to company portal.",
+        "category": "Access & Authentication",
+        "subcategory": "Password Reset",
+        "priority": "Low",
+        "reason": "User requires password reset to regain account access.",
+        "timestamp": "2026-06-07 21:25:53"
+    },
+    {
+        "ticket_id": "105",
+        "subject": "Forgot password",
+        "description": "Unable to login to company portal.",
+        "category": "Access & Authentication",
+        "subcategory": "Password Reset",
+        "priority": "Low",
+        "reason": "User requires password reset to regain account access.",
+        "timestamp": "2026-06-07 21:29:39"
+    },
+    {
+        "ticket_id": "105",
+        "subject": "Forgot password",
+        "description": "Unable to login to company portal.",
+        "category": "Access & Authentication",
+        "subcategory": "Password Reset",
+        "priority": "Low",
+        "reason": "User requires password reset to regain account access.",
+        "timestamp": "2026-06-07 21:30:08"
+    },
+    {
+        "ticket_id": "107",
+        "subject": "Forgot password",
+        "description": "User forgot the password",
+        "category": "Access & Authentication",
+        "subcategory": "Password Reset",
+        "priority": "Low",
+        "reason": "User requires password reset to regain account access.",
+        "timestamp": "2026-06-07 21:30:59"
+    },
+    {
+        "ticket_id": "11",
+        "subject": "Virtual machine unavailable",
+        "description": "Production VM is unreachable and hosted services are down.",
+        "category": "Infrastructure",
+        "subcategory": "Server",
+        "priority": "High",
+        "reason": "Production virtual machine is unreachable, impacting hosted services.",
+        "timestamp": "2026-06-07 21:51:59"
+    },
+    {
+        "ticket_id": "11",
+        "subject": "Virtual machine unavailable",
+        "description": "Production VM is unreachable and hosted services are down.",
+        "category": "Infrastructure",
+        "subcategory": "Server",
+        "priority": "High",
+        "reason": "Production virtual machine is unreachable, causing hosted services to be down.",
+        "timestamp": "2026-06-07 21:55:38"
+    },
+    {
+        "ticket_id": "11",
+        "subject": "Virtual machine unavailable",
+        "description": "Production VM is unreachable and hosted services are down.",
+        "category": "Infrastructure",
+        "subcategory": "Server",
+        "priority": "High",
+        "reason": "Production server is unavailable, impacting hosted services.",
+        "timestamp": "2026-06-07 22:04:20"
+    },
+    {
+        "ticket_id": "101",
+        "subject": "VPN connection fails after password reset",
+        "description": "User recently changed their Active Directory password and is now unable to connect to the corporate VPN. Authentication fails with an invalid credentials message.",
+        "category": "Network",
+        "subcategory": "VPN",
+        "priority": "Medium",
+        "reason": "VPN connection failed due to authentication issue after password reset.",
+        "timestamp": "2026-06-07 23:16:53"
+    },
+    {
+        "ticket_id": "102",
+        "subject": "Production VM unavailable",
+        "description": "Critical production virtual machine is not responding after scheduled maintenance. Business applications hosted on the VM are inaccessible.",
+        "category": "Infrastructure",
+        "subcategory": "Server",
+        "priority": "High",
+        "reason": "Critical virtual machine availability issue impacting business application hosting.",
+        "timestamp": "2026-06-07 23:18:57"
+    },
+    {
+        "ticket_id": "103",
+        "subject": "Emails not reaching external recipients",
+        "description": "Users can send emails internally but messages sent to external domains are not being delivered.",
+        "category": "Email & Collaboration",
+        "subcategory": "Email Delivery",
+        "priority": "Medium",
+        "reason": "Email functionality is affected because external email delivery is failing.",
+        "timestamp": "2026-06-07 23:19:42"
+    },
+    {
+        "ticket_id": "12",
+        "subject": "Unable to access internal websites",
+        "description": "Unable to access internal websites",
+        "category": "Infrastructure",
+        "subcategory": "Server",
+        "priority": "Medium",
+        "reason": "User cannot access internal websites, suggesting a server-level issue.",
+        "timestamp": "2026-06-08 00:00:57"
+    },
+    {
+        "ticket_id": "13",
+        "subject": "Shared storage nearing capacity",
+        "description": "File storage volume has reached 95 percent utilization and users are unable to upload new documents.",
+        "category": "Infrastructure",
+        "subcategory": "Storage",
+        "priority": "High",
+        "reason": "Storage capacity is nearing critical levels, preventing file uploads.",
+        "timestamp": "2026-06-08 00:01:36"
+    },
+    {
+        "ticket_id": "14",
+        "subject": "Suspicious phishing email reported",
+        "description": "Employee received an email requesting confidential company information. The sender appears to be impersonating a senior executive.",
+        "category": "Security",
+        "subcategory": "Phishing",
+        "priority": "High",
+        "reason": "Suspicious email reported, potentially containing confidential company information",
+        "timestamp": "2026-06-08 00:02:15"
+    },
+    {
+        "ticket_id": "T001",
+        "subject": "VPN not connecting",
+        "description": "Unable to access company resources through VPN.",
+        "category": "Network",
+        "subcategory": "VPN",
+        "priority": "High",
+        "reason": "VPN connectivity issue is preventing access to company resources.",
+        "timestamp": "2026-06-08 00:34:36"
+    },
+    {
+        "ticket_id": "1",
+        "subject": "VPN connection fails after password reset",
+        "description": "User recently changed password and is unable to connect to the corporate VPN",
+        "category": "Network",
+        "subcategory": "VPN",
+        "priority": "High",
+        "reason": "VPN connectivity issue persists after password reset, preventing access to company resources.",
+        "timestamp": "2026-06-08 00:36:40"
+    },
+    {
+        "ticket_id": "107",
+        "subject": "Production VM unavailable",
+        "description": "Critical production virtual machine is not responding after maintenance",
+        "category": "Infrastructure",
+        "subcategory": "Server",
+        "priority": "High",
+        "reason": "Production VM availability is impacted due to server unavailability.",
+        "timestamp": "2026-06-08 00:42:37"
+    },
+    {
+        "ticket_id": "11",
+        "subject": "Forgot password",
+        "description": "user reset password",
+        "category": "Access & Authentication",
+        "subcategory": "Password Reset",
+        "priority": "Low",
+        "reason": "User requires password reset to regain account access.",
+        "timestamp": "2026-06-08 03:34:11"
+    }
+]

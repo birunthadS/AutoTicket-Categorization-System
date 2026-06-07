@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Auto Ticket Categorization</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                AT
+            </div>
+
+            <div class="brand-text">
+
+    <h2>Auto Ticket Categorization</h2>
+
+    
+</div>
+
+        </div>
+
+        <nav>
+
+            <a href="/" class="active">
+                Overview
+            </a>
+
+            <a href="/classify">
+                Analyze Ticket
+            </a>
+
+            <a href="/history">
+                Prediction Logs
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <h1>
+                Auto Ticket Categorization
+            </h1>
+
+            <p>
+                AI-powered ticket analysis and priority assignment
+            </p>
+
+        </div>
+
+        <div class="card-grid">
+
+            <div class="metric-card total">
+
+                <div class="metric-title">
+                    Total Tickets
+                </div>
+
+                <div class="metric-value">
+                    {{ total }}
+                </div>
+
+            </div>
+
+            <div class="metric-card high">
+
+                <div class="metric-title">
+                    High Priority
+                </div>
+
+                <div class="metric-value">
+                    {{ high }}
+                </div>
+
+            </div>
+
+            <div class="metric-card medium">
+
+                <div class="metric-title">
+                    Medium Priority
+                </div>
+
+                <div class="metric-value">
+                    {{ medium }}
+                </div>
+
+            </div>
+
+            <div class="metric-card low">
+
+                <div class="metric-title">
+                    Low Priority
+                </div>
+
+                <div class="metric-value">
+                    {{ low }}
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Ticket Categories
+                </h2>
+
+            </div>
+
+            <div class="category-grid">
+
+                {% for category, count in category_counts.items() %}
+
+                <div class="category-card">
+
+                    <div class="category-name">
+                        {{ category }}
+                    </div>
+
+                    <div class="category-number">
+                        {{ count }}
+                    </div>
+
+                    <div class="category-label">
+                        Tickets
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Recent Predictions
+                </h2>
+
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Ticket ID</th>
+
+                            <th>Category</th>
+
+                            <th>Subcategory</th>
+
+                            <th>Priority</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        {% for ticket in recent %}
+
+                        <tr>
+
+                            <td>
+                                {{ ticket.ticket_id }}
+                            </td>
+
+                            <td>
+                                {{ ticket.category }}
+                            </td>
+
+                            <td>
+                                {{ ticket.subcategory }}
+                            </td>
+
+                            <td>
+
+                                <span class="priority {{ ticket.priority|lower }}">
+
+                                    {{ ticket.priority }}
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<div class="dashboard-footer">
+
+    Last Updated:
+    {{ recent[0].timestamp if recent else 'No Records Available' }}
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+[
+    {
+        "subject": "VPN not connecting",
+        "description": "Unable to access company resources through VPN.",
+        "category": "Network",
+        "subcategory": "VPN",
+        "priority": "High"
+    },
+    {
+        "subject": "Laptop not turning on",
+        "description": "Power button does not respond.",
+        "category": "Hardware",
+        "subcategory": "Laptop",
+        "priority": "High"
+    },
+    {
+        "subject": "Forgot password",
+        "description": "Cannot login to company account.",
+        "category": "Access Management",
+        "subcategory": "Password Reset",
+        "priority": "Medium"
+    }
+]

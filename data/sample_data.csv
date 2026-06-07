@@ -1,0 +1,11 @@
+Ticket ID,Subject,Description
+101,VPN connection fails after password reset,User cannot connect to VPN after changing password
+102,Production VM unavailable,Critical production virtual machine is not responding
+103,Outlook emails not sending,Outgoing emails remain stuck in Outbox
+104,Employee account locked,User entered incorrect password multiple times
+105,Suspicious phishing email reported,Employee received suspicious email requesting confidential information
+106,SAP application crashes during startup,Application closes immediately after launch
+107,Unable to access internal websites,DNS resolution appears to be failing
+108,Shared storage nearing capacity,Storage volume has reached 95 percent utilization
+109,New employee account creation request,Manager requested account for new employee
+110,Printer not responding,Office printer is offline and not accepting print jobs

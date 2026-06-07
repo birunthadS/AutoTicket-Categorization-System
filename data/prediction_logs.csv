@@ -1,0 +1,17 @@
+Ticket ID,Subject,Description,Category,Subcategory,Priority,Timestamp
+105,Forgot password,Unable to login to company portal.,Access & Authentication,Password Reset,Low,2026-06-07 21:25:53
+105,Forgot password,Unable to login to company portal.,Access & Authentication,Password Reset,Low,2026-06-07 21:29:39
+105,Forgot password,Unable to login to company portal.,Access & Authentication,Password Reset,Low,2026-06-07 21:30:08
+107,Forgot password,User forgot the password,Access & Authentication,Password Reset,Low,2026-06-07 21:30:59
+11,Virtual machine unavailable,Production VM is unreachable and hosted services are down.,Infrastructure,Server,High,2026-06-07 21:51:59
+11,Virtual machine unavailable,Production VM is unreachable and hosted services are down.,Infrastructure,Server,High,2026-06-07 21:55:38
+11,Virtual machine unavailable,Production VM is unreachable and hosted services are down.,Infrastructure,Server,High,2026-06-07 22:04:20
+101,VPN connection fails after password reset,User recently changed their Active Directory password and is now unable to connect to the corporate VPN. Authentication fails with an invalid credentials message.,Network,VPN,Medium,2026-06-07 23:16:53
+102,Production VM unavailable,Critical production virtual machine is not responding after scheduled maintenance. Business applications hosted on the VM are inaccessible.,Infrastructure,Server,High,2026-06-07 23:18:57
+103,Emails not reaching external recipients,Users can send emails internally but messages sent to external domains are not being delivered.,Email & Collaboration,Email Delivery,Medium,2026-06-07 23:19:42
+12,Unable to access internal websites,Unable to access internal websites,Infrastructure,Server,Medium,2026-06-08 00:00:57
+13,Shared storage nearing capacity,File storage volume has reached 95 percent utilization and users are unable to upload new documents.,Infrastructure,Storage,High,2026-06-08 00:01:36
+14,Suspicious phishing email reported,Employee received an email requesting confidential company information. The sender appears to be impersonating a senior executive.,Security,Phishing,High,2026-06-08 00:02:15
+T001,VPN not connecting,Unable to access company resources through VPN.,Network,VPN,High,2026-06-08 00:34:36
+1,VPN connection fails after password reset,User recently changed password and is unable to connect to the corporate VPN,Network,VPN,High,2026-06-08 00:36:40
+107,Production VM unavailable,Critical production virtual machine is not responding after maintenance,Infrastructure,Server,High,2026-06-08 00:42:37

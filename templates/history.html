@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Logs | Auto Ticket Categorization</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                AT
+            </div>
+
+            <div class="brand-text">
+
+                <h2>Auto Ticket Categorization</h2>
+
+                
+
+            </div>
+
+        </div>
+
+        <nav>
+
+            <a href="/">
+                Overview
+            </a>
+
+            <a href="/classify">
+                Analyze Ticket
+            </a>
+
+            <a href="/history" class="active">
+                Prediction Logs
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <div class="page-header">
+
+            <h1>
+                Prediction Logs
+            </h1>
+
+            <p>
+                View and download categorized ticket records
+            </p>
+
+        </div>
+
+        <div class="panel">
+
+            <div class="logs-toolbar">
+
+                <div class="logs-count">
+
+    Showing
+    <strong>{{ tickets|length }}</strong>
+    records
+
+</div>
+
+
+                <a
+                    href="/download-logs"
+                    class="download-btn"
+                >
+                    Download Logs
+                </a>
+
+            </div>
+            <div class="search-box">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search by Ticket ID, Subject, Category..."
+    >
+
+</div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Ticket ID</th>
+
+                            <th>Subject</th>
+
+                            <th>Category</th>
+
+                            <th>Subcategory</th>
+
+                            <th>Priority</th>
+
+                            <th>Timestamp</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        {% for ticket in tickets %}
+
+                        <tr>
+
+                            <td>
+                                {{ ticket.ticket_id }}
+                            </td>
+
+                            <td>
+                                {{ ticket.subject }}
+                            </td>
+
+                            <td>
+                                {{ ticket.category }}
+                            </td>
+
+                            <td>
+                                {{ ticket.subcategory }}
+                            </td>
+
+                            <td>
+
+                                <span class="priority {{ ticket.priority|lower }}">
+
+                                    {{ ticket.priority }}
+
+                                </span>
+
+                            </td>
+
+                            <td>
+                                {{ ticket.timestamp }}
+                            </td>
+
+                        </tr>
+
+                        {% endfor %}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script>
+
+const searchInput =
+document.getElementById("searchInput");
+
+searchInput.addEventListener(
+"keyup",
+function(){
+
+    const filter =
+    this.value.toLowerCase();
+
+    const rows =
+    document.querySelectorAll(
+    "tbody tr"
+    );
+
+    rows.forEach(function(row){
+
+        const text =
+        row.innerText.toLowerCase();
+
+        row.style.display =
+        text.includes(filter)
+        ? ""
+        : "none";
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
