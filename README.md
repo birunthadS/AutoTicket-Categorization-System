@@ -126,6 +126,16 @@ http://127.0.0.1:8000
 7. Dashboard displays statistics.
 
 
+## 🎬 Demo Videos
+
+### Project Demonstration
+📺 **YouTube Demo**
+https://youtu.be/UUNEOGkEzl4
+
+📁 **Full Demo Recordings**
+https://drive.google.com/drive/folders/1DCCYuT6jVC8FS40e-bJpy8mWkm0Tgdbv?usp=drive_link
+
+
 
 ## Future Enhancements
 
