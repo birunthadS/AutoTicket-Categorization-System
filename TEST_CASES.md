@@ -1,6 +1,6 @@
 ## Test Case 1
 
-### Input
+## Input
 
 Subject:
 VPN connection fails after password reset
