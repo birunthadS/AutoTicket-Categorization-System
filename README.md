@@ -120,7 +120,7 @@ http://127.0.0.1:8000
 1. User submits ticket.
 2. FastAPI receives request.
 3. Llama 3.2 analyzes subject and description.
-4. Category, subcategory, and priority are predicted.
+4. Category, subcategory, and priority are predicted with AI analysis.
 5. Output is validated.
 6. Results are stored in logs.
 7. Dashboard displays statistics.
